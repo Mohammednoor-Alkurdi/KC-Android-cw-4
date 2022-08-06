@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="calculator">Calculator</string>
+    <string name="calculate">Calculate</string>
+    <string name="total">Total</string>
+    <string name="_000">000</string>
+    <string name="_0000">000</string>
+</resources>

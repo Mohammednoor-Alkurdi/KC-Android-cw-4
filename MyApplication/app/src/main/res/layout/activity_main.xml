@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Calculator"
+    style="@android:style/Widget.KeyboardView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="84dp"
+        android:fontFamily="@font/inconsolata"
+        android:text="@string/calculator"
+        android:textColor="#7C4DFF"
+        android:textSize="48sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="108dp"
+        android:fontFamily="@font/inconsolata"
+        android:shadowColor="#673AB7"
+        android:text="@string/total"
+        android:textColor="#6C00F8"
+        android:textSize="48sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Number2" />
+
+    <EditText
+        android:id="@+id/Number1"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="232dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/inconsolata"
+        android:hint="@string/_000"
+        android:inputType="textPersonName"
+        android:textColor="#6C00F8"
+        android:textColorHint="#413D46"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <EditText
+        android:id="@+id/Number2"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/inconsolata"
+        android:hint="@string/_0000"
+        android:inputType="textPersonName"
+        android:textColor="#6C00F8"
+        android:textColorHint="#413D46"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toEndOf="@+id/Number1"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <Button
+        android:id="@+id/Operate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="84dp"
+        android:fontFamily="@font/inconsolata_bold"
+        android:shadowColor="#371616"
+        android:text="@string/calculate"
+        android:textColor="#272727"
+        android:textColorHighlight="#19486E"
+        android:textColorHint="#272727"
+        android:textColorLink="#03A9F4"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Result"
+        app:rippleColor="#7C3434" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
